@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import League Spartan font */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap');
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'League Spartan', -apple-system, BlinkMacSystemFont, sans-serif;
+  @apply bg-background text-foreground;
+  background-image: 
+    linear-gradient(135deg, #a18cd1 0%, #fbc2eb 55%, #fbc2eb 100%),
+    linear-gradient(to right, rgba(224, 224, 224, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(224, 224, 224, 0.5) 1px, transparent 1px);
+  background-size: 100% 100%, 20px 20px, 20px 20px;
 }
 
 @layer utilities {
@@ -91,4 +100,45 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Add a grid background effect */
+.grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(224, 224, 224, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(224, 224, 224, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(240, 240, 240, 0.8));
+  background-size: 20px 20px, 20px 20px, 100% 100%;
+}
+
+/* Enhance typography with League Spartan */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'League Spartan', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.heading-xl {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Additional League Spartan styles */
+.ls-tight {
+  letter-spacing: -0.03em;
+}
+
+.ls-normal {
+  letter-spacing: -0.01em;
+}
+
+.ls-wide {
+  letter-spacing: 0.01em;
+}
+
+/* Custom button style with League Spartan */
+.btn-spartan {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
