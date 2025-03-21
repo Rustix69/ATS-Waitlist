@@ -8,7 +8,9 @@ export default function LandingPage() {
       <header className="border-b">
         <div className="container flex h-16 items-center">
           <div className="flex items-center gap-2 font-bold text-xl">
-            <FileText className="h-6 w-6" />
+            <div className="flex items-center justify-center w-8 h-8 rounded-md bg-blue-600 text-white">
+              <FileText className="h-5 w-5" />
+            </div>
             <span>ResumeAI</span>
           </div>
         </div>
