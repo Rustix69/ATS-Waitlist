@@ -24,10 +24,10 @@ export default function RootLayout({
         <link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />
         
         {/* Apple touch icon */}
-        <link rel="apple-touch-icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon-logo.svg" />
         
         {/* Custom file icon as favicon with extra metadata */}
-        <meta name="theme-color" content="#2563EB" />
+        <meta name="theme-color" content="#6B21A8" />
       </head>
       <body suppressHydrationWarning>{children}</body>
     </html>

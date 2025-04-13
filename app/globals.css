@@ -8,11 +8,28 @@
 body {
   font-family: 'League Spartan', -apple-system, BlinkMacSystemFont, sans-serif;
   @apply bg-background text-foreground;
+  background: radial-gradient(circle at center, #6B21A8, #000000);
+  background-size: 100% 100%;
+}
+
+/* Background pattern */
+.bg-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: 
-    linear-gradient(135deg, #a18cd1 0%, #fbc2eb 55%, #fbc2eb 100%),
-    linear-gradient(to right, rgba(224, 224, 224, 0.5) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(224, 224, 224, 0.5) 1px, transparent 1px);
-  background-size: 100% 100%, 20px 20px, 20px 20px;
+    linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
 }
 
 @layer utilities {
@@ -102,14 +119,16 @@ body {
   }
 }
 
-/* Add a grid background effect */
+/* Grid background effect (commented out as no longer used) */
+/* 
 .grid-bg {
   background-image: 
-    linear-gradient(to right, rgba(224, 224, 224, 0.5) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(224, 224, 224, 0.5) 1px, transparent 1px),
-    linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(240, 240, 240, 0.8));
-  background-size: 20px 20px, 20px 20px, 100% 100%;
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px, 20px 20px;
+  background-position: center center;
 }
+*/
 
 /* Enhance typography with League Spartan */
 h1, h2, h3, h4, h5, h6 {

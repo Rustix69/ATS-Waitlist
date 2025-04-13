@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
   <style>
     @keyframes pulse {
-      0% { opacity: 0.8; }
+      0% { opacity: 0.9; }
       50% { opacity: 1; }
-      100% { opacity: 0.8; }
+      100% { opacity: 0.9; }
     }
     
     @keyframes fadeIn {
@@ -12,15 +12,16 @@
     }
     
     .bg {
-      fill: #2563EB;
+      fill: #FFFFFF;
     }
     
     .document {
-      fill: #2563EB;
-      stroke: #FFFFFF;
-      stroke-width: 2;
+      fill: #6B21A8;
+      stroke: #6B21A8;
+      stroke-width: 1;
       stroke-linecap: round;
       stroke-linejoin: round;
+      animation: pulse 3s infinite ease-in-out;
     }
     
     .line {
@@ -40,15 +41,11 @@
     }
     
     .fold {
-      stroke: #FFFFFF;
-      stroke-width: 2;
+      stroke: #6B21A8;
+      stroke-width: 1;
       stroke-linecap: round;
       stroke-linejoin: round;
       animation: fadeIn 0.8s ease-in-out forwards;
-    }
-    
-    .document {
-      animation: pulse 3s infinite ease-in-out;
     }
   </style>
 
