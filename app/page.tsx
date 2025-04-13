@@ -10,9 +10,9 @@ export default function LandingPage() {
       <div className="content grid min-h-screen grid-rows-[auto,1fr,auto]">
         <header className="border-b border-white/10">
           <div className="container flex h-16 items-center">
-            <div className="flex items-center gap-2 font-bold text-xl text-white pl-2">
-              <FileText className="h-6 w-6" />
-              <span>Resume AI</span>
+            <div className="flex justify-start gap-1.5 font-bold text-base sm:text-xl text-white">
+              <FileText className="h-4 w-4 sm:h-6 sm:w-6" />
+              <span className="text-sm sm:text-xl">Resume AI</span>
             </div>
           </div>
         </header>
